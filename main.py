@@ -16,7 +16,6 @@ def pomodoro_start(mins, secs, number):
         print('\b' * (len(time_str) + 2), end='', flush=True)
         if secs == 0:
             mins -= 1
-        if secs == 0:
             secs = 60
         sleep(1)
         secs -= 1
